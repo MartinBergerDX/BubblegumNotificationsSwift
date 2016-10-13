@@ -25,15 +25,19 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func plainNotificationWithVideo(sender: UIButton) {
-        ServiceRegistry.shared.notificationService.addPlainWithVideo()
+        ServiceRegistry.shared.notificationService.notificationWithVideoAttachment()
     }
     
     @IBAction func plainNotificationWithImage(sender: UIButton) {
-        ServiceRegistry.shared.notificationService.addPlainWithImage()
+        ServiceRegistry.shared.notificationService.notificationWithImageAttachment()
     }
     
     @IBAction func plainNotificationWithMusic(sender: UIButton) {
-        ServiceRegistry.shared.notificationService.addPlainWithMusic()
+        ServiceRegistry.shared.notificationService.notificationWithMusicAttachment()
+    }
+    
+    @IBAction func notificationWithAnimation(sender: UIButton) {
+        ServiceRegistry.shared.notificationService.notificationWithAnimation()
     }
     
     internal func setButtons(toEnabled enabled: Bool) {

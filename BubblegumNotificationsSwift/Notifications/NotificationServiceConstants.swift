@@ -24,4 +24,7 @@ struct NotificationServiceConstants {
     static let plainNotificationRequestWithVideoIdentifier: String = "PlainNotificationRequestWithVideoIdentifier"
     static let plainNotificationRequestWithImageIdentifier: String = "PlainNotificationRequestWithImageIdentifier"
     static let plainNotificationRequestWithMusicIdentifier: String = "PlainNotificationRequestWithMusicIdentifier"
+    
+    static let animationIdentifier: String = "AnimationIdentifier"
+    static let animationCategoryIdentifier: String = "AnimationCategoryIdentifier"
 }

@@ -31,6 +31,8 @@ class NotificationService: NSObject, NotificationServiceProtocol {
     func setup() {
         // you must set the value of this property before your app finishes launching.
         UNUserNotificationCenter.current().delegate = self
+        
+        UNUserNotificationCenter.current().setNotificationCategories([NotificationWithAnimation().category!])
     }
     
     func requestAuthorization(callback: ((Bool) -> Void)?) {
@@ -67,18 +69,23 @@ class NotificationService: NSObject, NotificationServiceProtocol {
         schedule(request: request)
     }
     
-    func addPlainWithVideo() {
-        self.current = producer.plainWithVideoAttachment()
+    func notificationWithVideoAttachment() {
+        self.current = producer.withVideoAttachment()
         schedule(request: self.current?.request()!)
     }
     
-    func addPlainWithImage() {
-        self.current = producer.plainWithImageAttachment()
+    func notificationWithImageAttachment() {
+        self.current = producer.withImageAttachment()
         schedule(request: self.current?.request()!)
     }
     
-    func addPlainWithMusic() {
-        self.current = producer.plainWithMusicAttachment()
+    func notificationWithMusicAttachment() {
+        self.current = producer.withMusicAttachment()
+        schedule(request: self.current?.request()!)
+    }
+    
+    func notificationWithAnimation() {
+        self.current = producer.withAnimation()
         schedule(request: self.current?.request()!)
     }
     
@@ -113,7 +120,6 @@ class NotificationService: NSObject, NotificationServiceProtocol {
 extension NotificationService: UNUserNotificationCenterDelegate {
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Swift.Void) {
-        showAlertOnReceivedNotification()
         completionHandler([.alert])
     }
     
