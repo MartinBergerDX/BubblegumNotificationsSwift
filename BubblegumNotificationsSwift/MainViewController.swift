@@ -40,6 +40,10 @@ class MainViewController: UIViewController {
         ServiceRegistry.shared.notificationService.notificationWithAnimation()
     }
     
+    @IBAction func notificationWithDrawing(sender: UIButton) {
+        ServiceRegistry.shared.notificationService.notificationWithDrawing()
+    }
+    
     internal func setButtons(toEnabled enabled: Bool) {
         self.buttonCollection.forEach { (button: UIButton) in
             button.isEnabled = enabled

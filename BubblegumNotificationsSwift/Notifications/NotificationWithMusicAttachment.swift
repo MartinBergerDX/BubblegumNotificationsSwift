@@ -9,7 +9,10 @@
 import UIKit
 import UserNotifications
 
-class PlainNotificationWithMusic: NotificationRequestProtocol {
+class NotificationWithMusicAttachment: NotificationRequestProtocol {
+    
+    public static let requestIdentifier: String = "NotificationWithMusicAttachmentRequestIdentifier"
+    
     func request() -> UNNotificationRequest! {
         guard let music = musicAttachment() else {
             return nil
@@ -21,7 +24,7 @@ class PlainNotificationWithMusic: NotificationRequestProtocol {
         content.attachments = [music]
         
         let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: NotificationServiceConstants.timeout, repeats: false)
-        let request = UNNotificationRequest.init(identifier: identifier(), content: content, trigger: trigger)
+        let request = UNNotificationRequest.init(identifier: NotificationWithMusicAttachment.requestIdentifier, content: content, trigger: trigger)
         
         return request
     }
@@ -43,6 +46,6 @@ class PlainNotificationWithMusic: NotificationRequestProtocol {
     }
     
     func identifier() -> String! {
-        return NotificationServiceConstants.plainNotificationRequestWithMusicIdentifier
+        return NotificationWithMusicAttachment.requestIdentifier
     }
 }

@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="6Ze-pG-OIl">
-                                <rect key="frame" x="30" y="40" width="315" height="194"/>
+                                <rect key="frame" x="30" y="40" width="315" height="246"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUP-6B-Ugz">
                                         <rect key="frame" x="0.0" y="0.0" width="315" height="38"/>
@@ -80,6 +80,20 @@
                                             <action selector="notificationWithAnimationWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fSo-4U-i14"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znC-9y-KoZ">
+                                        <rect key="frame" x="0.0" y="208" width="315" height="38"/>
+                                        <color key="backgroundColor" red="0.46666666870000001" green="0.5176470876" blue="0.71372550729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="PJW-Ez-oSc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Drawing">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="notificationWithDrawingWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hMl-Xh-rtw"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -95,6 +109,7 @@
                         <outletCollection property="buttonCollection" destination="QSs-WB-tts" collectionClass="NSMutableArray" id="Jxp-AS-r4p"/>
                         <outletCollection property="buttonCollection" destination="zY8-Hm-Zv5" collectionClass="NSMutableArray" id="xuc-sw-PTB"/>
                         <outletCollection property="buttonCollection" destination="bJG-z4-K8K" collectionClass="NSMutableArray" id="u0a-4J-prh"/>
+                        <outletCollection property="buttonCollection" destination="znC-9y-KoZ" collectionClass="NSMutableArray" id="xPD-3T-Iaa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -11,8 +11,8 @@ import UserNotifications
 
 class NotificationWithAnimation: NotificationRequestProtocol {
     
-    public static let categoryIdentifier = "NotificationWithAnimation::CategoryIdentifier"
-    public static let requestIdentifier = "NotificationWithAnimation::RequestIdentifier"
+    internal static let categoryIdentifier = "NotificationWithAnimation::CategoryIdentifier"
+    internal static let requestIdentifier = "NotificationWithAnimation::RequestIdentifier"
     var category: UNNotificationCategory? = {
         let cool = UNNotificationAction.init(identifier: "NotificationWithAnimation::CoolAction", title: "Cool", options: [.foreground])
         let category = UNNotificationCategory.init(identifier: NotificationWithAnimation.categoryIdentifier, actions: [cool], intentIdentifiers: [], options: [])

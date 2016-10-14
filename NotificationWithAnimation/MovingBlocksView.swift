@@ -66,7 +66,7 @@ class MovingBlocksView: UIView, DisplayLinkerDelegate {
     }
     
     private func commonSetup() {
-        self.colors = [indianRed, darkBlue, orange, salmon, lightBlue, darkSalmon]
+        self.colors = [indianRed, darkBlue, orange, lightBlue, salmon, darkSalmon]
         self.linker = DisplayLinker.init(withDelegate: self)
     }
     

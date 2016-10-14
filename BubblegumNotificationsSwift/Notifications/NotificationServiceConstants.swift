@@ -20,11 +20,4 @@ struct NotificationServiceConstants {
     static let requestIdentifier: String = "bubblegumRequestNotificationIdentifier"
     static let emailAction: String = "birthdayEmailAction"
     static let smsAction: String = "birthdaySmsAction"
-    
-    static let plainNotificationRequestWithVideoIdentifier: String = "PlainNotificationRequestWithVideoIdentifier"
-    static let plainNotificationRequestWithImageIdentifier: String = "PlainNotificationRequestWithImageIdentifier"
-    static let plainNotificationRequestWithMusicIdentifier: String = "PlainNotificationRequestWithMusicIdentifier"
-    
-    static let animationIdentifier: String = "AnimationIdentifier"
-    static let animationCategoryIdentifier: String = "AnimationCategoryIdentifier"
 }

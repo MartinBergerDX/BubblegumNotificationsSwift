@@ -11,18 +11,22 @@ import UIKit
 class NotificationRequestProducer {
     
     func withVideoAttachment() -> NotificationRequestProtocol! {
-        return PlainNotificationWithVideo()
+        return NotificationWithVideoAttachment()
     }
     
     func withImageAttachment() -> NotificationRequestProtocol! {
-        return PlainNotificationWithImage()
+        return NotificationWithImageAttachment()
     }
     
     func withMusicAttachment() -> NotificationRequestProtocol! {
-        return PlainNotificationWithMusic()
+        return NotificationWithMusicAttachment()
     }
     
     func withAnimation() -> NotificationRequestProtocol! {
         return NotificationWithAnimation()
+    }
+    
+    func withDrawing() -> NotificationRequestProtocol! {
+        return NotificationWithDrawing()
     }
 }

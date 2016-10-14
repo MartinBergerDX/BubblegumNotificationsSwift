@@ -9,7 +9,9 @@
 import UIKit
 import UserNotifications
 
-class PlainNotificationWithImage: NotificationRequestProtocol {
+class NotificationWithImageAttachment: NotificationRequestProtocol {
+    
+    public static let requestIdentifier: String = "NotificationWithImageAttachmentRequestIdentifier"
     
     func request() -> UNNotificationRequest! {
         guard let image = imageAttachment() else {
@@ -22,7 +24,7 @@ class PlainNotificationWithImage: NotificationRequestProtocol {
         content.attachments = [image]
         
         let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: NotificationServiceConstants.timeout, repeats: false)
-        let request = UNNotificationRequest.init(identifier: identifier(), content: content, trigger: trigger)
+        let request = UNNotificationRequest.init(identifier: NotificationWithImageAttachment.requestIdentifier, content: content, trigger: trigger)
         
         return request
     }
@@ -44,6 +46,6 @@ class PlainNotificationWithImage: NotificationRequestProtocol {
     }
     
     func identifier() -> String! {
-        return NotificationServiceConstants.plainNotificationRequestWithImageIdentifier
+        return NotificationWithImageAttachment.requestIdentifier
     }
 }

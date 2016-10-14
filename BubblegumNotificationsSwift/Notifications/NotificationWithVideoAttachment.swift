@@ -9,7 +9,9 @@
 import UIKit
 import UserNotifications
 
-class PlainNotificationWithVideo: NotificationRequestProtocol {
+class NotificationWithVideoAttachment: NotificationRequestProtocol {
+    
+    public static let requestIdentifier: String = "NotificationWithVideoAttachmentRequestIdentifier"
     
     func request() -> UNNotificationRequest! {
         guard let movie = movieAttachment() else {
@@ -22,7 +24,7 @@ class PlainNotificationWithVideo: NotificationRequestProtocol {
         content.attachments = [movie]
         
         let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: NotificationServiceConstants.timeout, repeats: false)
-        let request = UNNotificationRequest.init(identifier: identifier(), content: content, trigger: trigger)
+        let request = UNNotificationRequest.init(identifier: NotificationWithVideoAttachment.requestIdentifier, content: content, trigger: trigger)
         
         return request
     }
@@ -44,6 +46,6 @@ class PlainNotificationWithVideo: NotificationRequestProtocol {
     }
     
     func identifier() -> String! {
-        return NotificationServiceConstants.plainNotificationRequestWithVideoIdentifier
+        return NotificationWithVideoAttachment.requestIdentifier
     }
 }

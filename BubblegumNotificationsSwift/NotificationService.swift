@@ -89,6 +89,11 @@ class NotificationService: NSObject, NotificationServiceProtocol {
         schedule(request: self.current?.request()!)
     }
     
+    func notificationWithDrawing() {
+        self.current = producer.withDrawing()
+        schedule(request: self.current?.request()!)
+    }
+    
     internal func schedule(request: UNNotificationRequest!) {
         if self.current != nil {
             UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [self.current?.identifier() as String!])

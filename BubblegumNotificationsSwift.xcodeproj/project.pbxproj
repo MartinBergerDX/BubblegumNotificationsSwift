@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		981577211DABADC600A5CF56 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981577201DABADC600A5CF56 /* TopViewController.swift */; };
-		981577241DABC57A00A5CF56 /* PlainNotificationWithVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981577231DABC57A00A5CF56 /* PlainNotificationWithVideo.swift */; };
+		981577241DABC57A00A5CF56 /* NotificationWithVideoAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981577231DABC57A00A5CF56 /* NotificationWithVideoAttachment.swift */; };
 		981577261DABC6C700A5CF56 /* NotificationServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981577251DABC6C700A5CF56 /* NotificationServiceConstants.swift */; };
 		981577281DABC8B600A5CF56 /* NotificationRequestProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981577271DABC8B600A5CF56 /* NotificationRequestProducer.swift */; };
 		9815772B1DABD96500A5CF56 /* bigBuck.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9815772A1DABD4C100A5CF56 /* bigBuck.mp4 */; };
 		9815772D1DABE23B00A5CF56 /* fatRabbit.png in Resources */ = {isa = PBXBuildFile; fileRef = 9815772C1DABE23B00A5CF56 /* fatRabbit.png */; };
-		9815772F1DABE53500A5CF56 /* PlainNotificationWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815772E1DABE53500A5CF56 /* PlainNotificationWithImage.swift */; };
+		9815772F1DABE53500A5CF56 /* NotificationWithImageAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9815772E1DABE53500A5CF56 /* NotificationWithImageAttachment.swift */; };
 		981577321DACED3500A5CF56 /* miracle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 981577311DACED3500A5CF56 /* miracle.mp3 */; };
-		981577341DACED5300A5CF56 /* PlainNotificationWithMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981577331DACED5300A5CF56 /* PlainNotificationWithMusic.swift */; };
+		981577341DACED5300A5CF56 /* NotificationWithMusicAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981577331DACED5300A5CF56 /* NotificationWithMusicAttachment.swift */; };
 		982686681DAB87520086931F /* ServiceRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982686671DAB87520086931F /* ServiceRegistry.swift */; };
 		9866C81A1D9BEE290065E235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9866C8191D9BEE290065E235 /* AppDelegate.swift */; };
 		9866C81C1D9BEE290065E235 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9866C81B1D9BEE290065E235 /* MainViewController.swift */; };
@@ -38,6 +38,14 @@
 		98C3BB421DAFA18700856AB3 /* NotificationWithAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C3BB411DAFA18700856AB3 /* NotificationWithAnimation.swift */; };
 		98C3BB441DAFC1C100856AB3 /* MovingBlocksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C3BB431DAFC1C100856AB3 /* MovingBlocksView.swift */; };
 		98C3BB461DAFC22600856AB3 /* DisplayLinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C3BB451DAFC22600856AB3 /* DisplayLinker.swift */; };
+		98C3BB6E1DB0FD3D00856AB3 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9866C8311D9BEE530065E235 /* UserNotifications.framework */; };
+		98C3BB6F1DB0FD3D00856AB3 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9866C8331D9BEE530065E235 /* UserNotificationsUI.framework */; };
+		98C3BB721DB0FD3D00856AB3 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C3BB711DB0FD3D00856AB3 /* NotificationViewController.swift */; };
+		98C3BB751DB0FD3D00856AB3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C3BB731DB0FD3D00856AB3 /* MainInterface.storyboard */; };
+		98C3BB791DB0FD3D00856AB3 /* NotificationWithDrawing.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 98C3BB6D1DB0FD3D00856AB3 /* NotificationWithDrawing.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		98C3BB7F1DB0FDEA00856AB3 /* DisplayLinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C3BB7D1DB0FDEA00856AB3 /* DisplayLinker.swift */; };
+		98C3BB801DB0FDEA00856AB3 /* ShapeDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C3BB7E1DB0FDEA00856AB3 /* ShapeDrawer.swift */; };
+		98C3BB821DB0FE0F00856AB3 /* NotificationWithDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C3BB811DB0FE0F00856AB3 /* NotificationWithDrawing.swift */; };
 		98C6B9E11D9D31940092A485 /* cubes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 98C6B9E01D9D31930092A485 /* cubes.gif */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +64,13 @@
 			remoteGlobalIDString = 98C3BB301DAFA15700856AB3;
 			remoteInfo = NotificationWithAnimation;
 		};
+		98C3BB771DB0FD3D00856AB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9866C80E1D9BEE290065E235 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98C3BB6C1DB0FD3D00856AB3;
+			remoteInfo = NotificationWithDrawing;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,6 +81,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				98C3BB3D1DAFA15700856AB3 /* NotificationWithAnimation.appex in Embed App Extensions */,
+				98C3BB791DB0FD3D00856AB3 /* NotificationWithDrawing.appex in Embed App Extensions */,
 				9866C83E1D9BEE530065E235 /* BubblegumNotificationsContentExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -75,14 +91,14 @@
 
 /* Begin PBXFileReference section */
 		981577201DABADC600A5CF56 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
-		981577231DABC57A00A5CF56 /* PlainNotificationWithVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlainNotificationWithVideo.swift; path = Notifications/PlainNotificationWithVideo.swift; sourceTree = "<group>"; };
+		981577231DABC57A00A5CF56 /* NotificationWithVideoAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationWithVideoAttachment.swift; path = Notifications/NotificationWithVideoAttachment.swift; sourceTree = "<group>"; };
 		981577251DABC6C700A5CF56 /* NotificationServiceConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationServiceConstants.swift; path = Notifications/NotificationServiceConstants.swift; sourceTree = "<group>"; };
 		981577271DABC8B600A5CF56 /* NotificationRequestProducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationRequestProducer.swift; path = Notifications/NotificationRequestProducer.swift; sourceTree = "<group>"; };
 		9815772A1DABD4C100A5CF56 /* bigBuck.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bigBuck.mp4; sourceTree = "<group>"; };
 		9815772C1DABE23B00A5CF56 /* fatRabbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fatRabbit.png; sourceTree = "<group>"; };
-		9815772E1DABE53500A5CF56 /* PlainNotificationWithImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlainNotificationWithImage.swift; path = Notifications/PlainNotificationWithImage.swift; sourceTree = "<group>"; };
+		9815772E1DABE53500A5CF56 /* NotificationWithImageAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationWithImageAttachment.swift; path = Notifications/NotificationWithImageAttachment.swift; sourceTree = "<group>"; };
 		981577311DACED3500A5CF56 /* miracle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = miracle.mp3; sourceTree = "<group>"; };
-		981577331DACED5300A5CF56 /* PlainNotificationWithMusic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlainNotificationWithMusic.swift; path = Notifications/PlainNotificationWithMusic.swift; sourceTree = "<group>"; };
+		981577331DACED5300A5CF56 /* NotificationWithMusicAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationWithMusicAttachment.swift; path = Notifications/NotificationWithMusicAttachment.swift; sourceTree = "<group>"; };
 		982686671DAB87520086931F /* ServiceRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceRegistry.swift; sourceTree = "<group>"; };
 		9866C8161D9BEE290065E235 /* BubblegumNotificationsSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubblegumNotificationsSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9866C8191D9BEE290065E235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +123,13 @@
 		98C3BB411DAFA18700856AB3 /* NotificationWithAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationWithAnimation.swift; path = Notifications/NotificationWithAnimation.swift; sourceTree = "<group>"; };
 		98C3BB431DAFC1C100856AB3 /* MovingBlocksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingBlocksView.swift; sourceTree = "<group>"; };
 		98C3BB451DAFC22600856AB3 /* DisplayLinker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayLinker.swift; sourceTree = "<group>"; };
+		98C3BB6D1DB0FD3D00856AB3 /* NotificationWithDrawing.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationWithDrawing.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		98C3BB711DB0FD3D00856AB3 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		98C3BB741DB0FD3D00856AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		98C3BB761DB0FD3D00856AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98C3BB7D1DB0FDEA00856AB3 /* DisplayLinker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayLinker.swift; sourceTree = "<group>"; };
+		98C3BB7E1DB0FDEA00856AB3 /* ShapeDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeDrawer.swift; sourceTree = "<group>"; };
+		98C3BB811DB0FE0F00856AB3 /* NotificationWithDrawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationWithDrawing.swift; path = Notifications/NotificationWithDrawing.swift; sourceTree = "<group>"; };
 		98C6B9E01D9D31930092A485 /* cubes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cubes.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +156,15 @@
 			files = (
 				98C3BB331DAFA15700856AB3 /* UserNotificationsUI.framework in Frameworks */,
 				98C3BB321DAFA15700856AB3 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98C3BB6A1DB0FD3D00856AB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98C3BB6F1DB0FD3D00856AB3 /* UserNotificationsUI.framework in Frameworks */,
+				98C3BB6E1DB0FD3D00856AB3 /* UserNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,10 +199,11 @@
 		981577301DABE70E00A5CF56 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
-				981577231DABC57A00A5CF56 /* PlainNotificationWithVideo.swift */,
-				9815772E1DABE53500A5CF56 /* PlainNotificationWithImage.swift */,
-				981577331DACED5300A5CF56 /* PlainNotificationWithMusic.swift */,
+				981577231DABC57A00A5CF56 /* NotificationWithVideoAttachment.swift */,
+				9815772E1DABE53500A5CF56 /* NotificationWithImageAttachment.swift */,
+				981577331DACED5300A5CF56 /* NotificationWithMusicAttachment.swift */,
 				98C3BB411DAFA18700856AB3 /* NotificationWithAnimation.swift */,
+				98C3BB811DB0FE0F00856AB3 /* NotificationWithDrawing.swift */,
 			);
 			name = Notifications;
 			sourceTree = "<group>";
@@ -181,6 +214,7 @@
 				9866C8181D9BEE290065E235 /* BubblegumNotificationsSwift */,
 				9866C8351D9BEE530065E235 /* BubblegumNotificationsContentExtension */,
 				98C3BB341DAFA15700856AB3 /* NotificationWithAnimation */,
+				98C3BB701DB0FD3D00856AB3 /* NotificationWithDrawing */,
 				9866C8301D9BEE530065E235 /* Frameworks */,
 				9866C8171D9BEE290065E235 /* Products */,
 			);
@@ -192,6 +226,7 @@
 				9866C8161D9BEE290065E235 /* BubblegumNotificationsSwift.app */,
 				9866C82F1D9BEE530065E235 /* BubblegumNotificationsContentExtension.appex */,
 				98C3BB311DAFA15700856AB3 /* NotificationWithAnimation.appex */,
+				98C3BB6D1DB0FD3D00856AB3 /* NotificationWithDrawing.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,6 +278,18 @@
 			path = NotificationWithAnimation;
 			sourceTree = "<group>";
 		};
+		98C3BB701DB0FD3D00856AB3 /* NotificationWithDrawing */ = {
+			isa = PBXGroup;
+			children = (
+				98C3BB711DB0FD3D00856AB3 /* NotificationViewController.swift */,
+				98C3BB7D1DB0FDEA00856AB3 /* DisplayLinker.swift */,
+				98C3BB7E1DB0FDEA00856AB3 /* ShapeDrawer.swift */,
+				98C3BB731DB0FD3D00856AB3 /* MainInterface.storyboard */,
+				98C3BB761DB0FD3D00856AB3 /* Info.plist */,
+			);
+			path = NotificationWithDrawing;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -260,6 +307,7 @@
 			dependencies = (
 				9866C83D1D9BEE530065E235 /* PBXTargetDependency */,
 				98C3BB3C1DAFA15700856AB3 /* PBXTargetDependency */,
+				98C3BB781DB0FD3D00856AB3 /* PBXTargetDependency */,
 			);
 			name = BubblegumNotificationsSwift;
 			productName = BubblegumNotificationsSwift;
@@ -300,6 +348,23 @@
 			productReference = 98C3BB311DAFA15700856AB3 /* NotificationWithAnimation.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		98C3BB6C1DB0FD3D00856AB3 /* NotificationWithDrawing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98C3BB7A1DB0FD3D00856AB3 /* Build configuration list for PBXNativeTarget "NotificationWithDrawing" */;
+			buildPhases = (
+				98C3BB691DB0FD3D00856AB3 /* Sources */,
+				98C3BB6A1DB0FD3D00856AB3 /* Frameworks */,
+				98C3BB6B1DB0FD3D00856AB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationWithDrawing;
+			productName = NotificationWithDrawing;
+			productReference = 98C3BB6D1DB0FD3D00856AB3 /* NotificationWithDrawing.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -325,6 +390,11 @@
 						DevelopmentTeam = BE4CWML7BN;
 						ProvisioningStyle = Automatic;
 					};
+					98C3BB6C1DB0FD3D00856AB3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = BE4CWML7BN;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 9866C8111D9BEE290065E235 /* Build configuration list for PBXProject "BubblegumNotificationsSwift" */;
@@ -343,6 +413,7 @@
 				9866C8151D9BEE290065E235 /* BubblegumNotificationsSwift */,
 				9866C82E1D9BEE530065E235 /* BubblegumNotificationsContentExtension */,
 				98C3BB301DAFA15700856AB3 /* NotificationWithAnimation */,
+				98C3BB6C1DB0FD3D00856AB3 /* NotificationWithDrawing */,
 			);
 		};
 /* End PBXProject section */
@@ -380,6 +451,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98C3BB6B1DB0FD3D00856AB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98C3BB751DB0FD3D00856AB3 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -392,12 +471,13 @@
 				9866C81C1D9BEE290065E235 /* MainViewController.swift in Sources */,
 				9866C8461D9BEEAB0065E235 /* NotificationService.swift in Sources */,
 				982686681DAB87520086931F /* ServiceRegistry.swift in Sources */,
-				981577341DACED5300A5CF56 /* PlainNotificationWithMusic.swift in Sources */,
-				9815772F1DABE53500A5CF56 /* PlainNotificationWithImage.swift in Sources */,
+				981577341DACED5300A5CF56 /* NotificationWithMusicAttachment.swift in Sources */,
+				9815772F1DABE53500A5CF56 /* NotificationWithImageAttachment.swift in Sources */,
 				981577261DABC6C700A5CF56 /* NotificationServiceConstants.swift in Sources */,
 				9866C81A1D9BEE290065E235 /* AppDelegate.swift in Sources */,
 				981577211DABADC600A5CF56 /* TopViewController.swift in Sources */,
-				981577241DABC57A00A5CF56 /* PlainNotificationWithVideo.swift in Sources */,
+				981577241DABC57A00A5CF56 /* NotificationWithVideoAttachment.swift in Sources */,
+				98C3BB821DB0FE0F00856AB3 /* NotificationWithDrawing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +499,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98C3BB691DB0FD3D00856AB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98C3BB801DB0FDEA00856AB3 /* ShapeDrawer.swift in Sources */,
+				98C3BB721DB0FD3D00856AB3 /* NotificationViewController.swift in Sources */,
+				98C3BB7F1DB0FDEA00856AB3 /* DisplayLinker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -431,6 +521,11 @@
 			isa = PBXTargetDependency;
 			target = 98C3BB301DAFA15700856AB3 /* NotificationWithAnimation */;
 			targetProxy = 98C3BB3B1DAFA15700856AB3 /* PBXContainerItemProxy */;
+		};
+		98C3BB781DB0FD3D00856AB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98C3BB6C1DB0FD3D00856AB3 /* NotificationWithDrawing */;
+			targetProxy = 98C3BB771DB0FD3D00856AB3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -463,6 +558,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				98C3BB381DAFA15700856AB3 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		98C3BB731DB0FD3D00856AB3 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98C3BB741DB0FD3D00856AB3 /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -645,6 +748,34 @@
 			};
 			name = Release;
 		};
+		98C3BB7B1DB0FD3D00856AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BE4CWML7BN;
+				INFOPLIST_FILE = NotificationWithDrawing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.org.BubblegumNotificationsSwift.NotificationWithDrawing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		98C3BB7C1DB0FD3D00856AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BE4CWML7BN;
+				INFOPLIST_FILE = NotificationWithDrawing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.org.BubblegumNotificationsSwift.NotificationWithDrawing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -680,6 +811,15 @@
 			buildConfigurations = (
 				98C3BB3E1DAFA15700856AB3 /* Debug */,
 				98C3BB3F1DAFA15700856AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98C3BB7A1DB0FD3D00856AB3 /* Build configuration list for PBXNativeTarget "NotificationWithDrawing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98C3BB7B1DB0FD3D00856AB3 /* Debug */,
+				98C3BB7C1DB0FD3D00856AB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
