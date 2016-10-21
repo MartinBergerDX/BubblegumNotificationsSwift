@@ -15,7 +15,10 @@ class NotificationWithAnimation: NotificationRequestProtocol {
     internal static let requestIdentifier = "NotificationWithAnimation::RequestIdentifier"
     var category: UNNotificationCategory? = {
         let cool = UNNotificationAction.init(identifier: "NotificationWithAnimation::CoolAction", title: "Cool", options: [.foreground])
-        let category = UNNotificationCategory.init(identifier: NotificationWithAnimation.categoryIdentifier, actions: [cool], intentIdentifiers: [], options: [])
+        let approve = UNNotificationAction.init(identifier: "NotificationWithAnimation::ApproveAction", title: "Approve", options: [.foreground])
+        let later = UNNotificationAction.init(identifier: "NotificationWithAnimation::LaterAction", title: "Later", options: [.foreground])
+        let like = UNNotificationAction.init(identifier: "NotificationWithAnimation::LikeAction", title: "Like", options: [.foreground])
+        let category = UNNotificationCategory.init(identifier: NotificationWithAnimation.categoryIdentifier, actions: [cool, approve, later, like], intentIdentifiers: [], options: [])
         return category
     }()
     
